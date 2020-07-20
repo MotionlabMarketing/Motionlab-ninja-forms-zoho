@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ninja-forms-zoho-crm\n"
+"POT-Creation-Date: 2013-12-11 19:02-0800\n"
+"PO-Revision-Date: 2013-12-11 19:03-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: c:\\wamp\\www\\devsite\\hideme\\wp-content\\plugins\n"
+"X-Poedit-SearchPath-0: ninja-forms-zoho-crm\n"
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:32
+#: ninja-forms-zoho-crm/includes/field-registration.php:39
+#: ninja-forms-zoho-crm/includes/field-registration.php:46
+msgid "None"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:33
+msgid "Description"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:40
+#: ninja-forms-zoho-crm/includes/field-registration.php:55
+msgid "Country"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:47
+msgid "First Name"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:48
+msgid "Last Name"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:49
+msgid "Email"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:50
+msgid "Phone"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:51
+msgid "Street"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:52
+msgid "City"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:53
+msgid "State"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:54
+msgid "Zip Code"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:56
+msgid "-- company info --"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:57
+msgid "Company"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:58
+msgid "Title"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:59
+msgid "Website"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:60
+msgid "Industry"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:61
+msgid "Annual Revenue"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:62
+msgid "-- misc contact info --"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:63
+msgid "Mobile"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:64
+msgid "Fax"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:65
+msgid "Secondary Email"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:66
+msgid "Skype ID"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:67
+msgid "Salutation"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:68
+msgid "-- internal marketing data --"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:69
+msgid "Lead Source"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:70
+msgid "Campaign Source"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:71
+msgid "Lead Owner"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:72
+msgid "Lead Status"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:73
+msgid "Rating"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:87
+msgid "Zoho CRM Field"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/field-registration.php:92
+msgid "Map this field to your Zoho CRM"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:20
+#: ninja-forms-zoho-crm/includes/settings.php:21
+#: ninja-forms-zoho-crm/includes/settings.php:259
+msgid "Zoho CRM Settings"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:42
+#: ninja-forms-zoho-crm/includes/settings.php:84
+msgid "Ninja Forms Zoho CRM Settings"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:55
+msgid "Save Options"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:103
+msgid "Zoho CRM Auth Token"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:134
+msgid "Please complete the necessary settings for your Zoho CRM account"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:209
+msgid "Communication Status"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:264
+msgid "Add to Zoho Leads"
+msgstr ""
+
+#: ninja-forms-zoho-crm/includes/settings.php:265
+msgid "Do you want this form data added as a Zoho CRM lead?"
+msgstr ""

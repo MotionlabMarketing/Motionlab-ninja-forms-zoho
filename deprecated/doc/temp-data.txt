@@ -1,0 +1,165 @@
+Array ( 
+    [Accounts] => Array ( 
+        [message] => Record(s) added successfully 
+        [Id] => 274459000000900059 
+        [Created Time] => 2014-08-05 20:11:56 
+        [Modified Time] => 2014-08-05 20:11:56 
+        [Created By] => Sequeira 
+        [Modified By] => Sequeira 
+    ) 
+    [Contacts] => Array ( 
+        [message] => Record(s) added successfully 
+        [Id] => 274459000000906037 
+        [Created Time] => 2014-08-05 20:11:57 
+        [Modified Time] => 2014-08-05 20:11:57 
+        [Created By] => Sequeira 
+        [Modified By] => Sequeira 
+    ) 
+    [Potentials] => Array ( 
+        [message] => Record(s) added successfully 
+        [Id] => 274459000000896066 
+        [Created Time] => 2014-08-05 20:11:57 
+        [Modified Time] => 2014-08-05 20:11:57 
+        [Created By] => Sequeira 
+        [Modified By] => Sequeira 
+    ) 
+) 
+
+
+
+a:1:{s:8:"response";
+    a:2:{s:5:"Leads";a:1:{
+        s:8:"response";a:2:{
+            s:6:"result";a:2:{
+                s:7:"message";s:28:"Record(s) added successfully";
+                s:12:"recorddetail";a:1:{
+                    s:2:"FL";a:5:{
+                        i:0;a:2:{
+                            s:7:"content";s:18:"274459000000897007";
+                            s:3:"val";s:2:"Id";
+                        }
+                        i:1;a:2:{
+                            s:7:"content";s:19:"2014-08-03 12:28:21";
+                            s:3:"val";s:12:"Created Time";
+                        }
+                        i:2;a:2:{
+                            s:7:"content";s:19:"2014-08-03 12:28:21";
+                            s:3:"val";s:13:"Modified Time";
+                        }
+                        i:3;a:2:{
+                            s:7:"content";s:8:"Sequeira";
+                            s:3:"val";s:10:"Created By";
+                        }
+                        i:4;a:2:{
+                            s:7:"content";s:8:"Sequeira";
+                            s:3:"val";s:11:"Modified By";
+                        }
+                    }
+                }
+            }
+            s:3:"uri";s:37:"/crm/private/json/Leads/insertRecords";
+        }
+    }
+    s:8:"Accounts";a:1:{
+        s:8:"response";a:2:{
+            s:6:"result";a:2:{
+                s:7:"message";s:28:"Record(s) added successfully";
+                s:12:"recorddetail";a:1:{
+                    s:2:"FL";a:5:{
+                        i:0;a:2:{
+                            s:7:"content";s:18:"274459000000901005";
+                            s:3:"val";s:2:"Id";
+                        }
+                        i:1;a:2:{
+                            s:7:"content";s:19:"2014-08-03 12:28:22";
+                            s:3:"val";s:12:"Created Time";
+                        }
+                        i:2;a:2:{
+                            s:7:"content";s:19:"2014-08-03 12:28:22";
+                            s:3:"val";s:13:"Modified Time";
+                        }
+                        i:3;a:2:{
+                            s:7:"content";s:8:"Sequeira";
+                            s:3:"val";s:10:"Created By";
+                        }
+                        i:4;a:2:{
+                            s:7:"content";s:8:"Sequeira";
+                            s:3:"val";s:11:"Modified By";
+                        }
+                    }
+                }
+            }
+            s:3:"uri";s:40:"/crm/private/json/Accounts/insertRecords";
+        }
+    }
+}} 
+
+
+
+<Leads><row no="1"><FL val="Last Name">LastName</FL><FL val="Company">Company</FL></row></Leads> 
+
+
+
+
+<?xml version="1.0" encoding="UTF-8" ?> <response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">274459000000872001</FL><FL val="Created Time">2014-06-03 09:06:38</FL><FL val="Modified Time">2014-06-03 09:06:38</FL><FL val="Created By"><![CDATA[Sequeira]]></FL><FL val="Modified By"><![CDATA[Sequeira]]></FL></recorddetail></result></response> 
+
+
+a:1:{
+	s:8:"response";a:1:{
+		s:5:"Leads";a:1:{
+			s:8:"response";a:2:{
+				s:6:"result";a:2:{
+					s:7:"message";s:28:"Record(s) added successfully";
+					s:12:"recorddetail";a:1:{
+						s:2:"FL";a:5:{
+							i:0;a:2:{
+								s:7:"content";s:18:"274459000000897001";
+								s:3:"val";s:2:"Id";
+							}
+							i:1;a:2:{
+								s:7:"content";s:19:"2014-08-02 11:26:26";
+								s:3:"val";s:12:"Created Time";
+							}
+							i:2;a:2:{
+								s:7:"content";s:19:"2014-08-02 11:26:26";
+								s:3:"val";s:13:"Modified Time";
+							}
+							i:3;a:2:{
+								s:7:"content";s:8:"Sequeira";
+								s:3:"val";s:10:"Created By";
+							}
+							i:4;a:2:{
+								s:7:"content";s:8:"Sequeira";
+								s:3:"val";s:11:"Modified By";
+							}
+						}
+					}
+				}
+				s:3:"uri";s:37:"/crm/private/json/Leads/insertRecords";
+			}
+		}
+	}
+} 
+
+
+
+SAMPLE RESPONSE - POTENTIAL FAILED BECAUSE MISSING REQUIRED FIELD
+
+a:1:{
+s:8:"response";a:3:{
+
+s:8:"Accounts";a:1:{s:8:"response";a:2:{s:6:"result";a:2:{s:7:"message";s:28:"Record(s) added successfully";s:12:"recorddetail";a:1:{s:2:"FL";a:5:{i:0;a:2:{s:7:"content";s:18:"274459000000900009";s:3:"val";s:2:"Id";}i:1;a:2:{s:7:"content";s:19:"2014-08-05 12:39:34";s:3:"val";s:12:"Created Time";}i:2;a:2:{s:7:"content";s:19:"2014-08-05 12:39:34";s:3:"val";s:13:"Modified Time";}i:3;a:2:{s:7:"content";s:8:"Sequeira";s:3:"val";s:10:"Created By";}i:4;a:2:{s:7:"content";s:8:"Sequeira";s:3:"val";s:11:"Modified By";}}}}s:3:"uri";s:40:"/crm/private/json/Accounts/insertRecords";}}
+
+s:8:"Contacts";a:1:{
+	s:8:"response";a:2:{
+		s:6:"result";a:2:{
+			s:7:"message";s:28:"Record(s) added successfully";
+			s:12:"recorddetail";a:1:{
+				s:2:"FL";a:5:{i:0;a:2:{s:7:"content";s:18:"274459000000909005";s:3:"val";s:2:"Id";}i:1;a:2:{s:7:"content";s:19:"2014-08-05 12:39:34";s:3:"val";s:12:"Created Time";}i:2;a:2:{s:7:"content";s:19:"2014-08-05 12:39:34";s:3:"val";s:13:"Modified Time";}i:3;a:2:{s:7:"content";s:8:"Sequeira";s:3:"val";s:10:"Created By";}i:4;a:2:{s:7:"content";s:8:"Sequeira";s:3:"val";s:11:"Modified By";}}}}s:3:"uri";s:40:"/crm/private/json/Contacts/insertRecords";}}
+
+s:10:"Potentials";a:1:{
+	s:8:"response";a:2:{
+		s:3:"uri";s:42:"/crm/private/json/Potentials/insertRecords";
+		s:5:"error";a:2:{
+			s:4:"code";i:4401;
+			s:7:"message";s:78:"Unable to populate data, please check if mandatory value is entered correctly.";}}}}} 

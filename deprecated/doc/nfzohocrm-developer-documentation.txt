@@ -1,0 +1,31 @@
+NINJA FORMS ZOHO CRM DOCUMENTATION DEVELOPER DOC
+- intended for developers to integrate this plugin into their websites
+
+<h2>FILTERS</h2>
+
+
+<h3>nfzohocrm_modify_zoho_comm_status_default</h3>
+
+This filter allows to you change the default text used on the communication status when no communication has been attempted since the setting of the authorization key.  The default text is  "No communication has been detected.  Please test using your created form."
+
+
+<h3>nfzohocrm_default_last_name</h3>
+
+Zoho requires that a last name be entered for the lead.  To give the site owner the most flexibility in his/her form design, this plugin does not force requiring a last name.  Instead, if no last name is entered (or the field was never added to the form), a default last name is submitted so that the communication with Zoho can continue.  The default last name is "undisclosed".
+
+
+<h3>nfzohocrm_default_company_name</h3>
+
+Zoho requires that a company name be entered for the lead.  To give the site owner the most flexibility in his/her form design, this plugin does not force requiring a company.  Instead, if no company is entered (or the field was never added to the form), a default company is submitted so that the communication with Zoho can continue.  The default company is "undisclosed".
+
+
+<h3>nfzohocrm_write_to_error_log</h3>
+
+An optional error/status log is available for developer use.  By default, it is turned off to prevent the never-ending writing of every communication.  To activate the log, add a function that returns TRUE and each communication attempt will be documented into the plugin base directory with a file name of zoho-response-log.txt.
+
+
+<h3>nfzohocrm_validate_settings</h3>
+
+The raw authorization token on the settings page is passed through a simple filter that strips slashes from the entry.  If you want to add more validation, you can use this filter.  The snippet in use is:
+apply_filters( 'nfzohocrm_validate_settings' , $output, $input ); where $output is an array consisting of the stripped authorization key and $input is an array of the raw authorization key.  The reason for using an array is to make it easy to expand the plugin features with other settings in the future.
+

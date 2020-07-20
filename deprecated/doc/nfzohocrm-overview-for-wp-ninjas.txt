@@ -1,0 +1,98 @@
+WP NINJAS ZOHO CRM DOCUMENTATION
+- intended for Ninja Forms' developers to ensure this plugin's coding meets standards
+
+
+/*----------
+OVERVIEW
+------------------------------------------------------------------------------------------------------------------------*/
+
+The Zoho CRM extension uses Ninja Forms to easily add form entries into one's Zoho CRM account.
+
+By having one's Wordpress site connect to their Zoho CRM, they can capture sales leads through a contact form on their website and follow up with the potential clients more effectively.  Ninja Forms makes it easy to capture information from, and about, the site visitor so that the user can spend more time generating sales and less time trying to manage the contact forms.
+
+
+/*----------
+FILE STRUCTURE:
+------------------------------------------------------------------------------------------------------------------------*/
+
+ninja-forms-zoho-crm
+
+	zoho-integration.php
+	
+	data.txt // should change the name to zoho-response-log.txt
+	
+	/includes 
+		data-processing.php
+		field-registration.php
+		settings.php
+		zoho-communication.php
+		
+	/doc
+		nfzohocrm-overview-for-wpninjas.txt
+		nfzohocrm-end-user-documentation.txt
+		
+/*----------
+zoho-integration.php
+-----*/
+
+Primary file for plugin.  Sets global variables, includes other files, activates NF licensing.
+
+
+PREFIX: nfzohocrm
+	This is used in every function, variable, constant
+
+GLOBALS:
+	$nfzohocrm_site_options pulls the array of nfzohocrm_settings for quick access wherever needed
+	
+
+/*----------
+settings.php
+-----*/
+
+Creates the site-wide and form-specific options/settings used.
+
+nzohocrm_settings['nfzohocrm_authtoken'] stores the authorization token used to communicate with Zoho
+
+form_settings['nfzohocrm-add-to-leads'] is a form-specific setting that initiates communication for this form with Zoho
+
+nzohocrm_settings['zoho_comm_status'] updates the user on what the last known communication attempt with Zoho was.  This is to give a quick sanity check for the user, reducing the need to review any response log data.
+
+
+/*----------
+field-registration.php
+-----*/
+
+Creates the field-specific drop-down selection that tells the plugin which Zoho field to map this field to.
+
+The _text, _hidden, and _list values can map to any of the desired Zoho fields.  Ninja Forms' built-in validation and masking tools make it easy for the user to guide the site visitor to input only valid entries into any given field.
+
+The _country field will only map to Zoho's "Country" field.
+
+The _textarea field will only map to Zoho's "Description" because that is the only field that allows that field size.
+
+
+/*----------
+data-processing.php
+-----*/
+
+Receives the submitted form data through $ninja_forms_processing, prepares the data to send, sends the data, receives the communication result from zoho, and updates the log/status accordingly.
+
+nfzohocrm_process_form_to_insert_lead - cycles through each field and determines if it is to be sent.  Since Zoho requires both Last Name and Company, this function will add a default value if the form or the user does not provide it.
+
+
+
+Data Structure for communication result:
+	$log_data['status'] - executive summary of result; makes it easy to handle the rest of the data
+	$log_data['zoho_message']['code'] - The error code sent back
+	$log_data['zoho_message']['message'] - The error message sent back
+	$log_data['debug'] - Handcrafted message that I add based on troubleshooting
+	$log_data['zoho_comm_status'] - user-friendly status update placed on the settings page
+	
+
+/*----------
+zoho-communication.php
+-----*/
+
+Receives the xml data built in the data-processing file and sends it to Zoho using wp_remote_post
+
+	

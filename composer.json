@@ -1,0 +1,6 @@
+{
+  "name": "wordpress-plugins-purchased/ninja-forms-zoho",
+  "description": "Integrate Zoho CRM with Ninja Forms",
+  "type": "wordpress-plugin",
+  "license": "Copyright WP Ninjas, LLC"
+}

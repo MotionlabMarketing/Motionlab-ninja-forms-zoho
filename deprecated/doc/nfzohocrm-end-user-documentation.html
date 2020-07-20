@@ -1,0 +1,41 @@
+<h2>INTRODUCTION</h2>
+<p>The Zoho CRM extension for Ninja Forms enables you to easily use your Ninja Forms to collect information from your website&#8217;s visitors and send it to your Zoho Customer Relationshop Manager application.  As you may already know, a CRM helps you convert more leads into actual sales with tools that keep you more organized and better prepared put your best foot forward with each potential client.</p>
+<p>You&#8217;ll design your own &#8220;Contact Us&#8221; form using Ninja Forms and then tell it what information from the form you want sent to your Zoho account.  Here are the steps to follow.</p>
+<h2>STEP-BY-STEP INSTRUCTIONS</h2>
+<h3>Add your Zoho Authorization Token</h3>
+<p>The Zoho Authorization Token is a security code that lets Zoho know that your website&#8217;s Ninja Form has permission to send information to it.  You can create it by going to the setup menu item while logged into your Zoho CRM account.  (Additional help on creating the token follows below the plugin instructions.)</p>
+<ol>
+<li>Under the FORMS main menu item in WordPress, click on &#8220;Zoho CRM Settings.&#8221;</li>
+<li>Copy and paste your Authorization Token in the text box and click &#8220;Save Options.&#8221;</li>
+</ol>
+<h3>Select the Ninja Form(s) you wish to connect to your Zoho account</h3>
+<ol>
+<li>Select &#8220;All Forms&#8221; from the FORMS main menu item, hover over the form you wish to add, then click &#8220;Edit&#8221;</li>
+<li>On the Form Settings tab, find the &#8220;Zoho CRM Settings&#8221; sub-heading</li>
+<li>Check the box named &#8220;Add to Zoho&#8221; and then click &#8220;Save Form Settings</li>
+</ol>
+<h3>Map the fields to your Zoho CRM account</h3>
+<p>Mapping is the process of telling Ninja Forms which information from the form goes where in your Zoho CRM account.</p>
+<ol>
+<li>Select the &#8220;Field Settings&#8221; tab</li>
+<li>For any textbox, hidden text box, or list box, when you open the field options, you will find a drop-down option called, &#8220;Zoho CRM field.&#8221;  Drop down this menu and select which field in your Zoho CRM account will receive the information submitted by the form.  For example, if you have a field to collect a site visitor&#8217;s first name, you&#8217;ll wand to send this to Zoho&#8217;s &#8220;first name&#8221; field.</li>
+<li>Note that you do not have to map all the fields from your form, only the ones you want to use.</li>
+<li>After mapping the fields you wish to use, click &#8220;Save Field Settings&#8221;</li>
+</ol>
+<p>Those three steps are all it takes to make your Ninja Form connect to your Zoho CRM account! Here are some strategies to help you get the most out of this extension.</p>
+<h3>New Parameters</h3>
+<p>As of version 1.5, you can now trigger workflow rules you have set up in Zoho.  Map a hidden field to "Trigger Workflows" and set the default value to "true."  To disable workflows, remove the field from your form.</p>
+<p>Also in 1.5, you can turn on Approvals for Contacts and Leads.  Map a hidden field to the "Requires Approval" field and set its value to "true".  To disable approvals, remove the field</p>
+<h3>Date Handling</h3>
+<p> Potentials and Tasks have date fields to set the closing date and due dates, respectively.  You have three options on how to set them.</p>
+<p>If you wish to use a set date, you may use a text field with the date picker option (for site visitor entry) or a hidden field with a specific date you choose as the default date.  These must be set as mm/dd/yyyy.</p>
+<p>If you wish to set the date a certain time interval from when the form is submitted, use a hidden field and set its default value to the time interval you wish.  For example, "3 days" , "4 weeks" , "6 months"</p>
+<h3>Helpful Hints</h3>
+<ul>
+<li>Zoho CRM requires a last name and a company name for each new lead so it makes sense to add those to the form.  If your form doesn&#8217;t have both of these fields, the extension will create a default value to put in there so that the rest of the information you wish to collect will successfully saved.</li>
+<li>Use Ninja Forms&#8217; powerful field settings options to ensure that the information collected makes sense.  For example, you could make &#8220;Last Name&#8221; a required field, you can force the &#8220;Annual Revenue&#8221; field to be a number, etc.</li>
+<li>Use hidden fields to collect additional information.  You can use a hidden field with a default value of &#8220;Post / Page ID&#8221; and map it to &#8220;Campaign Source&#8221; to tell you which web page inspired the site visitor to contact you.  With this information, you can design better web pages and sales materials to generate even more sales!</li>
+</ul>
+<p>If you are having trouble finding and/or creating your authorization token, you can copy and paste this line into your browser and then replace &#8220;your_zoho_username&#8221; and &#8220;your_zoho_password&#8221; with your login credentials:</p>
+<p><code>https://accounts.zoho.com/apiauthtoken/nb/create?SCOPE=ZohoCRM/crmapi&amp;EMAIL_ID=your_zoho_username&amp;PASSWORD=your_zoho_password</code></p>
+<p>You&#8217;ll see on the page a line that says &#8220;AUTHTOKEN=&#8221; followed by an insanely long series of letters and numbers.  Copy and paste this series of numbers into the Authorization Token field on the Zoho CRM settings page.</p>
